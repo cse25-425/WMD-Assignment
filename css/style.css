@@ -1,0 +1,88 @@
+/* GENERAL */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: top 70px;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* HERO SECTION */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/chess.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ SECTION CARDS */
+section .col-md-4 {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+section .col-md-4:hover {
+    transform: translateY(-5px);
+}
+
+/* ✅ HEADINGS */
+h2, h3 {
+    font-weight: bold;
+}
+
+/* ✅ CONTACT FORM */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    border-radius: 8px !important;
+}
+
+/* ✅ FOOTER */
+footer {
+    margin-top: 30px;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
