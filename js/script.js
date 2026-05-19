@@ -1,9 +1,3 @@
-//Test js
-console.log("Website working!");
-
-window.onload = function() {
-    alert("Welcome to Chess Academy!");
-};
 
 // Create chess board
 var board = Chessboard('board', {
@@ -30,5 +24,12 @@ function onDrop(source, target) {
 engine.onmessage = function(event) {
     if (event.data.includes("bestmove")) {
         console.log("AI move:", event.data);
+    }
+};
+
+engine.onmessage = function(event) {
+    if (event.data.includes("bestmove")) {
+        document.getElementById("aiMove").textContent =
+            "Best move: " + event.data;
     }
 };
