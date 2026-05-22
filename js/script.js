@@ -140,3 +140,9 @@ function loadPuzzle() {
 
   alert("Puzzle loaded!");
 }
+function joinClub(event) {
+    event.preventDefault();
+
+    document.getElementById("joinMessage").textContent =
+        "You have successfully joined the club!";
+}
